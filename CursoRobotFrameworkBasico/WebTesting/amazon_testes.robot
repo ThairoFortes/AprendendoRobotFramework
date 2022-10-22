@@ -1,3 +1,9 @@
+### Sessão de Confiruração 
+*** Settings ***
+Documentation    Essa suíte testa o site da Amazon
+Test Setup       Abrir o navegador
+Test Teardown    Fechar o navegador
+
 ### Sessão de Testes
 *** Test Cases *** 
 Caso de Teste 01 - Acesso ao menu "Eletrônico"
@@ -16,4 +22,3 @@ Caso de Teste 02 - Pesquisa de um Produto
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
     Verificar o resultado da pesquisa se esta listando o produto pesquisado
-
