@@ -1,4 +1,4 @@
-# Sessão de Configuração
+# Seção de Configuração
 *** Settings ***
 Library    SeleniumLibrary
 
@@ -11,7 +11,7 @@ ${TEXTO_RESULTADOS}               //span[@class='a-color-state a-text-bold'][con
 ${BOTAO_ADD_CARRINHO}             add-to-cart-button
 ${BOTAO_IR_CARRINHO}              //a[@href='/gp/cart/view.html?ref_=sw_gtc'][contains(.,'Ir para o carrinho')]
 
-# Sessão de Implementação
+# Seção de Implementação
 *** Keywords ***
 # Setup e Teardown
 Dado o usuario esteja na homepage da Amazon
