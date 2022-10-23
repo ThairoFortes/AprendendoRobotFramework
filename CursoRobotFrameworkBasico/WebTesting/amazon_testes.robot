@@ -1,11 +1,11 @@
-# Sessão de Confiruração 
+# Seção de Confiruração 
 *** Settings ***
 Documentation    Essa suíte testa o site da Amazon
 Resource         amazon_resources_bdd.robot
 Test Setup       Dado o usuario esteja na homepage da Amazon
 Test Teardown    Fechar o navegador
 
-# Sessão de Testes
+# Seção de Testes
 *** Test Cases *** 
 Caso de Teste 01 - Acesso ao menu "Eletrônico"
     [Documentation]    Esse teste verifica o menu Ofertas do Dia e verifica a categoria Informática
