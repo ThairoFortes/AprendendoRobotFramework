@@ -7,10 +7,15 @@ Suite Setup      Conectar a minha API
 *** Test Cases ***
 Buscar a listagem de todos os livros (GET em todos os livros)
     Requisitar todos os livros
-    #Conferir se retorna uma lista com todos os livros
+    Conferir o status code    200 
+    Conferir o reason         OK  
+    Conferir se retorna uma lista com "200" livros
 
-# Buscar um livro específico (GET em um livro específico)
-    #Conferir se retorna todos os dados corretos do livro 15
+Buscar um livro específico (GET em um livro específico)
+    Requisitar o livro "15"
+    Conferir o status code    200 
+    Conferir o reason         OK  
+    
 
 # Cadastrar um novo livro (POST)
     #Conferir se retorna todos os dados cadastrados para o novo livro
@@ -20,5 +25,6 @@ Buscar a listagem de todos os livros (GET em todos os livros)
 
 # Delerar um livro (DELETE)
     #Conferir se deleta o livro 200s
+
 
 
