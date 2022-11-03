@@ -15,16 +15,23 @@ Buscar um livro específico (GET em um livro específico)
     Requisitar o livro "15"
     Conferir o status code    200 
     Conferir o reason         OK  
-    
+    Conferir se retorna todos os dados corretos do livro 15
 
-# Cadastrar um novo livro (POST)
-    #Conferir se retorna todos os dados cadastrados para o novo livro
+Cadastrar um novo livro (POST)
+    Cadastrar um novo livro
+    Conferir o status code    200 
+    Conferir o reason         OK
+    Conferir se retorna todos os dados cadastrados para o novo livro
 
-# Alterar um livro (PUT)
-    #Conferir se retorna todos os dados alterados do livro 150
+Alterar um livro (PUT)
+    Alterar o livro "15"
+    Conferir o status code    200 
+    Conferir o reason         OK
+    Conferir se retorna todos os dados alterados do livro
 
-# Delerar um livro (DELETE)
-    #Conferir se deleta o livro 200s
-
+Deletar o livro "15" (DELETE)
+    Deletar o livro "15"
+    Conferir o status code    200 
+    Conferir o reason         OK
 
 
